@@ -1,0 +1,19 @@
+import React from "react";
+import Links from "./Links";
+
+
+function About({bio, linkedin, github}) {
+ /// const size = ((props.bio).length)
+ /// {bio, linkedin, github} = props
+  
+  return (
+    <div id="about">
+      <h2>About Me</h2>
+      {bio && bio.length > 1 ? <p>{bio}</p> : null}
+      <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
+    <Links linkedin = {linkedin} github = {github} />
+    </div>
+  );
+}
+
+export default About;
